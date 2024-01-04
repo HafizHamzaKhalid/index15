@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox
+    </title>
+    <style>
+.container{ border: 2px solid blueviolet;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+
+     /* align item ye property just one line k lya use hota h */
+    align-items: center;
+
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    gap: 88px;
+    column-gap: 80px;
+    
+row-gap: 78px;
+column-gap: 89px;
+
+    /* agr ak sa zyada lines ho tw ye flex wrap use krta hai center ma lana k lya */
+    flex-wrap: wrap;
+}
+
+.item{
+    align-self: self-end;
+    flex-grow: 1;
+    height: 42px;
+    width: 42px;
+    background-color: aqua;
+    border: 2px solid red;
+    /* margin: 4px; */
+}
+.item1{
+    flex-grow: 2;
+    align-self: start;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </main>
+</body>
+</html>
